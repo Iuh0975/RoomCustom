@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btncancel"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bgr_btncancel"
+        android:text="cancel"
+        android:textColor="#F8F5F5"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnsave"
+        app:layout_constraintEnd_toEndOf="@+id/txtputname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnsave" />
+
+    <EditText
+        android:id="@+id/txtputname"
+        android:layout_width="368dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bgr_putname"
+        android:drawableLeft="@drawable/user1"
+        android:ems="10"
+        android:hint="  The place that you will visit in the future"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bgr_btnsave"
+        android:text="save"
+        android:textColor="#F8F5F5"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtputname"
+        app:layout_constraintTop_toBottomOf="@+id/txtputname" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
